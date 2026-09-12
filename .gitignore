@@ -1,0 +1,49 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python Virtual Environments
+venv/
+env/
+ENV/
+.env
+
+# Testing & Linting Caches
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+
+# Training Weights, Checkpoints & Outputs
+checkpoints/
+output/
+*.safetensors
+*.ckpt
+*.pt
+*.bin
+
+# Training Data & Cache
+dataset_dir/
+dataset/
+*.parquet
+
+# Logs & Metrics
+logs/
+tensorboard/
+*.log
+
+# Temporary & Archive files
+.DS_Store
+Thumbs.db
+*.tmp
+*.zip
+*.tar.gz
+ruff_report.json
+
+# IDE Configurations
+.idea/
+.vscode/
+*.swp
+*.swo
