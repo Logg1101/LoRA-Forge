@@ -134,6 +134,14 @@ All 33 test cases run in seconds and require no GPU.
 
 ---
 
+## 🤝 Authorship & AI Disclosure
+
+This project was conceived, architected, and directed by **Ankit Kumar Sinha** ([@Logg1101](https://github.com/Logg1101)), who designed the core training workflows, mathematical specifications, UI layouts, and feature requirements.
+
+In the spirit of open transparency: the underlying code implementation, algorithm translations, refactoring, and test suites were developed in collaborative partnership with AI coding assistants (Google DeepMind Antigravity / Claude). Human vision, domain workflow design, and rigorous verification guided every stage of the project.
+
+---
+
 ## License
 
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
