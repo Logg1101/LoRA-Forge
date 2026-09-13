@@ -70,7 +70,7 @@ LoRA Forge organizes complex training options into 5 unified, scrollable tabs:
 
 - **Operating System**: Windows 10/11 or Linux
 - **Python**: 3.10, 3.11, or 3.12
-- **GPU**: NVIDIA GPU with CUDA support (8GB+ VRAM recommended for SD1.5, 12GB+ for SDXL with NF4/caching)
+- **GPU**: NVIDIA GPU with CUDA support or AMD GPU with ROCm support (Linux recommended; 8GB+ VRAM recommended for SD1.5, 12GB+ for SDXL with NF4/caching)
 
 ### Setup
 
@@ -92,10 +92,16 @@ LoRA Forge organizes complex training options into 5 unified, scrollable tabs:
    ```
 
 3. **Install dependencies**:
-   ```bash
-   pip install --upgrade pip
-   pip install -r requirements.txt
-   ```
+   - For **NVIDIA CUDA**:
+     ```bash
+     pip install --upgrade pip
+     pip install -r requirements.txt
+     ```
+   - For **AMD ROCm (Linux)**:
+     ```bash
+     pip install --upgrade pip
+     pip install -r requirements_ROCm.txt
+     ```
 
 ---
 

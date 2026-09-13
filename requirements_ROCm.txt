@@ -1,0 +1,30 @@
+﻿# LoRA-Forge - AMD ROCm (Linux) Setup
+# Install command: pip install -r requirements_ROCm.txt
+--index-url https://download.pytorch.org/whl/rocm6.2
+
+# Core PyTorch (ROCm for AMD Radeon & Instinct GPUs)
+torch>=2.4.0
+torchvision>=0.19.0
+
+# Diffusion & Generative Training
+diffusers>=0.27.0
+transformers>=4.40.0
+safetensors>=0.4.2
+accelerate>=0.29.0
+peft>=0.10.0
+lycoris-lora>=2.2.0
+
+# Optimizers & Configuration
+prodigyopt>=1.0.0
+pydantic>=2.5.0
+
+# Desktop UI & Visualization
+PySide6>=6.6.0
+pyqtgraph>=0.13.3
+tensorboard>=2.16.0
+
+# Utilities
+tqdm>=4.66.0
+Pillow>=10.2.0
+numpy>=1.26.0,<2.0.0
+pytest>=8.0.0

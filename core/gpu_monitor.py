@@ -99,7 +99,8 @@ class GPUMonitor:
                 return GPUStats()
             name = torch.cuda.get_device_name(0)
             vram_used = torch.cuda.memory_allocated(0) / (1024 * 1024)
-            vram_total = torch.cuda.get_device_properties(0).total_mem / (1024 * 1024)
+            prop = torch.cuda.get_device_properties(0)
+            vram_total = getattr(prop, "total_memory", getattr(prop, "total_mem", 0)) / (1024 * 1024)
             return GPUStats(
                 name=name,
                 vram_used_mb=vram_used,
